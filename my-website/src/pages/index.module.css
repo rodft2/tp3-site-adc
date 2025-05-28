@@ -1,6 +1,6 @@
 .pageContainer {
   min-height: 100vh;
-  background-color: #131212;
+  background-color: #326879;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -15,14 +15,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #2e2d2d;
-  color: #fff;
+  background-color: #ebebeb;
+  color: #000000;
   padding: 1rem 2rem;
   text-align: center;
   font-weight: bold;
   font-size: 1.25rem;
   z-index: 100;
-  border-bottom: 1px solid #333;
 }
 
 .footer {
@@ -30,7 +29,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #2e2d2d;
+  background-color: #1b1b1b;
   color: #fff;
   text-align: center;
   padding: 0.75rem;
@@ -60,7 +59,8 @@
 }
 .topSection {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .mainTitle {
@@ -70,7 +70,7 @@
 }
 
 .description {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   color: #cccccc;
 }
 
@@ -103,9 +103,10 @@
   border: 1px solid #444;
   padding: 1.5rem;
   text-align: left;
-  background-color: #111;
+  background-color: #e6e6e6;
   color: #f0f0f0;
   box-shadow: 0 0 5px #00000066;
+  border-radius: 5%;
 }
 
 .cardTitle {
@@ -113,14 +114,14 @@
   margin-bottom: 1rem;
   font-size: 150%;
   white-space: pre-line;
-  color: #ffffff;
+  color: #000000;
 }
 .cardText {
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 100%;
   white-space: pre-line;
-  color: #ffffff;
+  color: #000000;
 }
 
 .image {
@@ -160,7 +161,7 @@
   top: 4rem; /* abaixo do header */
   bottom: 3rem; /* acima do footer */
   width: 300px;
-  background-color: #181818;
+  background-color: #2a5361;
   padding: 2rem;
   border-right: 1px solid #333;
   z-index: 99;
@@ -177,7 +178,7 @@
 }
 
 .sidebar a {
-  color: #66b2ff;
+  color: #f3f3f3;
   text-decoration: none;
   font-size: 1.2rem; /* ⬅️ AQUI aumentas o tamanho da letra */
   font-weight: 500;
