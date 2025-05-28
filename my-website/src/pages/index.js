@@ -59,7 +59,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className={styles.footer}>
-        <a href="https://github.com/o_teu_utilizador" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/rodft2/tp3-site-adc" target="_blank" rel="noopener noreferrer">
           Ver no GitHub
         </a>
       </footer>
