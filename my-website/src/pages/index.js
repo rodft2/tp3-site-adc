@@ -13,7 +13,7 @@ export default function HomePage() {
               <Link to="/introducao">Introdução</Link>
             </li>
             <li>
-              <Link to="/Funcionalidades">Funcionalidades</Link>
+              <Link to="/funcionalidades">Funcionalidades</Link>
             </li>
             <li>
              <Link to="/tecnologias">Tecnologias</Link>
