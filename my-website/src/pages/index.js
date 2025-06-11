@@ -103,7 +103,6 @@ export default function HomePage() {
 
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
-          <p>© {new Date().getFullYear()} Gestão de Consultas. Todos os direitos reservados.</p>
           <a 
             href="https://github.com/rodft2/tp3-site-adc" 
             target="_blank" 
