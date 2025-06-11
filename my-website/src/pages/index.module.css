@@ -1,31 +1,10 @@
-:root {
-  --primary: #2563eb;
-  --primary-light: #dbeafe;
-  --primary-dark: #1e40af;
-  --accent: #10b981;
-  --accent-light: #d1fae5;
-  --text-dark: #1f2937;
-  --text-light: #f9fafb;
-  --bg-light: #ffffff;
-  --bg-dark: #111827;
-  --gray-light: #f3f4f6;
-  --gray-medium: #e5e7eb;
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --rounded-sm: 0.25rem;
-  --rounded-md: 0.5rem;
-  --rounded-lg: 0.75rem;
-  --rounded-xl: 1rem;
-}
-
 /* Base Styles */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   margin: 0;
   line-height: 1.5;
-  color: var(--text-dark);
-  background-color: var(--primary-light);
+  color: #1f2937; /* text-dark */
+  background-color: #dbeafe; /* primary-light */
 }
 
 /* Layout */
@@ -43,39 +22,57 @@ body {
 /* Header */
 .header {
   grid-area: header;
-  background-color: var(--bg-light);
+  background-color: #ffffff; /* bg-light */
   padding: 1.5rem 2rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
   z-index: 50;
 }
 
 .headerContent {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logoContainer {
+  width: 100px;
+  height: 100px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.headerText {
+  flex: 1;
 }
 
 .header h1 {
   margin: 0;
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--primary);
+  color: #2563eb; /* primary */
 }
 
 .headerSubtitle {
   margin: 0.25rem 0 0;
   font-size: 1rem;
-  color: var(--text-dark);
+  color: #1f2937; /* text-dark */
   opacity: 0.8;
 }
 
 /* Sidebar */
 .sidebar {
   grid-area: sidebar;
-  background-color: var(--primary);
-  color: var(--text-light);
+  background-color: #2563eb; /* primary */
+  color: #f9fafb; /* text-light */
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--primary-dark);
+  border-right: 1px solid #1e40af; /* primary-dark */
 }
 
 .sidebarHeader {
@@ -108,9 +105,9 @@ body {
   display: flex;
   align-items: center;
   padding: 0.75rem 1rem;
-  color: var(--text-light);
+  color: #f9fafb; /* text-light */
   text-decoration: none;
-  border-radius: var(--rounded-md);
+  border-radius: 0.5rem; /* rounded-md */
   transition: all 0.2s ease;
 }
 
@@ -143,14 +140,14 @@ body {
 .heroTitle {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--primary);
+  color: #2563eb; /* primary */
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .heroDescription {
   font-size: 1.25rem;
-  color: var(--text-dark);
+  color: #1f2937; /* text-dark */
   max-width: 700px;
   margin: 0 auto 2rem;
   opacity: 0.9;
@@ -160,19 +157,19 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background-color: var(--primary);
+  background-color: #2563eb; /* primary */
   color: white;
   font-weight: 600;
-  border-radius: var(--rounded-lg);
+  border-radius: 0.75rem; /* rounded-lg */
   text-decoration: none;
   transition: all 0.2s ease;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
 }
 
 .ctaButton:hover {
-  background-color: var(--primary-dark);
+  background-color: #1e40af; /* primary-dark */
   transform: translateY(-1px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
 }
 
 /* Features Grid */
@@ -184,10 +181,10 @@ body {
 }
 
 .featureCard {
-  background-color: var(--bg-light);
-  border-radius: var(--rounded-xl);
+  background-color: #ffffff; /* bg-light */
+  border-radius: 1rem; /* rounded-xl */
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
   transition: transform 0.3s ease;
 }
 
@@ -196,8 +193,8 @@ body {
 }
 
 .highlightCard {
-  background-color: var(--primary);
-  color: var(--text-light);
+  background-color: #2563eb; /* primary */
+  color: #f9fafb; /* text-light */
 }
 
 .cardImageContainer {
@@ -258,8 +255,8 @@ body {
 /* Footer */
 .footer {
   grid-area: footer;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  background-color: #111827; /* bg-dark */
+  color: #f9fafb; /* text-light */
   padding: 1.5rem;
   text-align: center;
 }
@@ -275,13 +272,13 @@ body {
 .githubLink {
   display: inline-flex;
   align-items: center;
-  color: var(--text-light);
+  color: #f9fafb; /* text-light */
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .githubLink:hover {
-  color: var(--accent);
+  color: #10b981; /* accent */
 }
 
 .githubIcon {
@@ -318,37 +315,5 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* Header Styles */
-.headerContent {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
 
-.logoContainer {
-  width: 100px; 
-  height: 100px;
-}
 
-.logo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.headerText {
-  flex: 1;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 1.75rem;
-  color: var(--primary);
-}
-
-.headerSubtitle {
-  margin: 0.25rem 0 0;
-  font-size: 1rem;
-  color: var(--text-dark);
-  opacity: 0.8;
-}
